@@ -13,16 +13,10 @@ int n1=120;
                        PORTB|=(1<<PB4);
                        _delay_ms(10);
                 }
-               else if(speed_sensor<n1)
+               else 
                 {
                        PORTB&=~(1<<PB4);
                        PORTB|=(1<<PB3);
                        _delay_ms(10);
-                }
-               else
-                {
-                        PORTB&=~(1<<PB3);
-                        PORTB&=~(1<<PB4);
-                        _delay_ms(10);
                 }
 }
